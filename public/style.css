@@ -3,3 +3,10 @@ body {
   background-color: lightyellow;
   color: maroon;
 }
+
+img {
+
+/* right: 0px; */
+width: 150px;
+padding: 10px;
+}

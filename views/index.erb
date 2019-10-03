@@ -1,6 +1,7 @@
 <% for student in @students %>
   <p>Name: <%= student.pretty_name() %></p>
   <p>Age: <%= student.age() %></p>
-  <p>House: <%= student.house() %></p>
+  <p>House: <%= student.house().name %></p>
+  <img src="<%= student.house().logo %>" alt="Logo">
   <hr>
 <% end %>

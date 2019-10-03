@@ -18,12 +18,17 @@
   id="age"
   />
   <label for="house"></label>
-  <select name="house" id="house">
-    <option value="Gryffindor">Gryffindor</option>
-    <option value="Slytherin">Slytherin</option>
-    <option value="Hufflepuff">Hufflepuff</option>
-    <option value="Ravenclaw">Ravenclaw</option>
-  </select>
+  <!-- <select name="house" id="house">
+  <option value="Gryffindor">Gryffindor</option>
+  <option value="Slytherin">Slytherin</option>
+  <option value="Hufflepuff">Hufflepuff</option>
+  <option value="Ravenclaw">Ravenclaw</option>
+</select> -->
 
-  <input type="submit" value="Add Student">
+<select name="house_id" id="house">
+  <%@houses.each do |house| %>
+  <option value="<%= house.id %>"><%= house.name %></option>
+  <% end %>
+</select>
+<input type="submit" value="Add Student">
 </form>
